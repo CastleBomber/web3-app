@@ -6,6 +6,13 @@
  * Link: https://www.youtube.com/watch?v=Wn_Kb3MR_cU&ab_channel=JavaScriptMastery
  *
  *
+ * Code:
+ * npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+ * npx hardhat run scripts/deploy.js --network sepolia
+ * 
+ * @nomicfoundation/harhat-toolbox giving problems
+ * 
+ * 
  * Shortcuts:
  *  VS Code:
  * 	    c++ VS Code clang-formatter: shift+alt+f
