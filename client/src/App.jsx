@@ -9,14 +9,18 @@
  * Code:
  * npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
  * npx hardhat run scripts/deploy.js --network sepolia
- * 
+ *
  * @nomicfoundation/harhat-toolbox giving problems
- * 
- * 
+ *
+ * Tips:
+ * trouble shooting - deleting node_modules folder, package-lock.json, then edit package.json to appropriate versions
+ *
+ *
  * Shortcuts:
  *  VS Code:
  * 	    c++ VS Code clang-formatter: shift+alt+f
  *      Go to definition - F12
+ *      Command pallete - shtift+cmd+p
  *
  *  Visual Studio:
  *      code folding: select region, ctrl+m+m
@@ -29,7 +33,6 @@
  */
 
 import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
-
 
 const App = () => {
   return (
