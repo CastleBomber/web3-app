@@ -41,7 +41,9 @@ const TransactionCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="">To: {shortenAddress(addressTo)}</p>
+            <p className="text-white text-base">
+              To: {shortenAddress(addressTo)}
+            </p>
           </a>
           <p className="text-white text-base">Amount: {amount} ETH</p>
           {message && (
@@ -53,7 +55,7 @@ const TransactionCard = ({
         </div>
 
         <img
-          src={gifUrl || url}
+          src={gifURL || url}
           alt="nature"
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         />
@@ -81,8 +83,14 @@ const Transactions = () => {
           </h3>
         )}
 
-        <div className="flex flex-wrap justify-center items-center mt-10">
+        {/* <div className="flex flex-wrap justify-center items-center mt-10">
           {transactions.reverse().map((transaction, i) => (
+            <TransactionCard key={i} {...transaction} />
+          ))}
+        </div> */}
+
+        <div className="flex flex-wrap justify-center items-center mt-10">
+          {[...dummyData, ...transactions].reverse().map((transaction, i) => (
             <TransactionCard key={i} {...transaction} />
           ))}
         </div>

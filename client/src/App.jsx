@@ -12,9 +12,14 @@
  *
  * @nomicfoundation/harhat-toolbox giving problems
  *
- * Tips:
+ * Notes:
  * trouble shooting - deleting node_modules folder, package-lock.json, then edit package.json to appropriate versions
  *
+ * when sending crypto, login to your account. if you need the address from another account, grab it,
+ * but go back to the original account and refresh the page. Your specific address should be visible
+ * on the credit card image
+ *
+ * Transactions.jsx is having troubles displaying gifs dynamically, left it with dummy data
  *
  * Shortcuts:
  *  VS Code:

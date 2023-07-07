@@ -36,7 +36,10 @@ export const TransactionProvider = ({ children }) => {
 
   const getAllTransactions = async () => {
     try {
-      if (!ethereum) return alert("Please install metamask");
+      if (!ethereum) {
+        return alert("Please install metamask");
+      }
+
       const transactionContract = getEthereumContract();
 
       const availableTransactions =
@@ -65,7 +68,9 @@ export const TransactionProvider = ({ children }) => {
 
   const checkIfWalletIsConnected = async () => {
     try {
-      if (!ethereum) return alert("Please install metamask");
+      if (!ethereum) {
+        return alert("Please install metamask");
+      }
 
       const accounts = await ethereum.request({ method: "eth_accounts" });
 
@@ -105,6 +110,7 @@ export const TransactionProvider = ({ children }) => {
       });
 
       setCurrentAccount(accounts[0]);
+      window.location.reload();
     } catch (error) {
       console.log(error);
 
