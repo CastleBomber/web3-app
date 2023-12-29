@@ -5,6 +5,9 @@
  * Tutorial: Build and Deploy a Modern Web 3.0 Blockchain App | Solidity, Smart Contracts, Crypto
  * Link: https://www.youtube.com/watch?v=Wn_Kb3MR_cU&ab_channel=JavaScriptMastery
  *
+ * To run:
+ * "npm run dev" from client folder
+ * uses vite on web browser, http://127.0.0.1:5173/
  *
  * Code:
  * npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
